@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@color/purple_700"
+    >
+
+    <TextView
+        android:id="@+id/tekslogin"
+        android:layout_marginTop="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN USER"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editekuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekslogin"
+        android:layout_marginTop="54dp"
+        android:hint="Inputkan Username"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="15dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingHorizontal="15dp"
+        />
+
+    <EditText
+        android:id="@+id/editekpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editekuser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Inputkan Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingHorizontal="15dp"
+        android:drawablePadding="15dp"
+        />
+
+    <Button
+        android:id="@+id/tombollogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editekpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="LOGIN"
+        android:textStyle="bold" />
+
+</RelativeLayout>
