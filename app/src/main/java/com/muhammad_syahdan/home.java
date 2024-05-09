@@ -35,6 +35,17 @@ import android.Manifest;
             TextView userNameTextView = findViewById(R.id.tekshome);
             userNameTextView.setText("selamat datang " + username + ",sudah login!");
 
+            Button btnTodoList = findViewById(R.id.btnTodoList);
+            btnTodoList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Buka aktivitas To-Do List
+                    Intent intent = new Intent(home.this, todolist.class);
+                    startActivity(intent);
+                }
+            });
+
+
             imageView=findViewById(R.id.imageViewCamera);
                     btn=findViewById(R.id.btnCamera);
                             btn.setOnClickListener(new View.OnClickListener() {
